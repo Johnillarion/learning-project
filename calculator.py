@@ -1,1 +1,7 @@
-float(input(a,b,c))
+a = input()
+b = input()
+c = input()
+d = 
+print(d)
+
+
