@@ -1,11 +1,21 @@
-a = int(input())
-b = int(input())
-c = int(input())
-if (a >= b and a >= c) and (b <= a and b >= c) and (c <= a and c <= b):
-    print(a,'\n',b,'\n',c)
-elif (b >= a and b >= c) and (a <= b and a >= c) and (c <= a and c <= b):
-    print(b,'\n',a,'\n',c)
-elif (c >= a and c >= b) and (b <= c and b >= a) and (a <= c and a <= b):
-    print(c, '\n', b, '\n', a)
+"""Напишите программу, которая получает на вход три целых числа, по одному числу в строке,
+и выводит на консоль в три строки сначала максимальное, потом минимальное, после чего оставшееся число.
 
-a-b-c,c-b-a,b-a-c,a-c-b,b-c-a,
+На ввод могут подаваться и повторяющиеся числа."""
+
+x = int( input() )
+y = int( input() )
+z = int( input() )
+
+if x <= y <= z:
+	print(z, "\n", x, "\n", y)
+elif y <= x <= z:
+	print(z, "\n", y, "\n", x)
+elif y <= z <= x:
+	print(x, "\n", y, "\n", z)
+elif x <= z <= y:
+	print(y, "\n", x, "\n", z)
+elif z <= x <= y:
+	print(y, "\n", z, "\n", x)
+elif z <= y <= x:
+	print(x, "\n", z, "\n", y)
